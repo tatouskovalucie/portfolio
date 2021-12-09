@@ -199,7 +199,9 @@ div img{
   }
 
 /*Career page*/
-
+.h1_career{
+  margin-top: 10px;
+}
 h3{
   color: black;
   font: 16px;
@@ -210,7 +212,7 @@ h3{
   display: grid;
   grid-template-columns: auto auto;
 }
-p, ul li{
+p, li{
   margin: 10px;
   margin-left: 30px;
   margin-right: 30px;
@@ -218,6 +220,7 @@ p, ul li{
   font-size: 15px;
   text-align: center;
 }
+
 .first_card, .second_card, .third_card, .forth_card {
   padding: 16px; 
   text-align: center;
@@ -226,15 +229,19 @@ p, ul li{
   margin-right: 20px;
   margin-left: 20px; 
   margin-bottom: 20px;
+  margin-top: 20px;
   color: black ;
+  position:relative;
 }
 .sap_par, .storyous_par, .bushman_par, .dantem_par {
   padding-top: 10px; 
   text-align: left; 
 }
-.sap_button, .bushman_button, .dantem_button {
+.sap_button, .storyous_button, .bushman_button, .dantem_button {
   padding-top: 20px; 
-  width: 100%;
+  bottom: 15px;
+  position: absolute;
+  width: calc( 100% - 32px );
   margin: O auto;
   background-color:black; 
   padding: 14px 28px;
@@ -242,7 +249,10 @@ p, ul li{
   font-size: 16px;
   justify-content: center;
   text-decoration: none;
+  margin-top: 70px;
+
 }
+/** 
 .storyous_button{
   padding-top: 20px; 
   width: 100%;
@@ -253,7 +263,7 @@ p, ul li{
   justify-content: center;
   text-decoration: none;
   margin-top: 10px;
-}
+}**/
 .sap_button a, .storyous_button a, .bushman_button a, .dantem_button a {
   color:#ffffff;
   text-transform: capitalize;
@@ -449,6 +459,9 @@ footer {
 }
 
 @media screen and (max-width:767px) {
+  .career_grid{
+    grid-template-columns: 100%;
+  }
   .section-container {
     flex-flow: row wrap;
   }
@@ -486,6 +499,7 @@ footer {
   }
 }
 @media screen and (prefers-reduced-motion: reduce){
+
   /*Turn off scroll*/
   html{
       scroll-behavior: auto; /* Removes scroll animation */
@@ -500,5 +514,8 @@ footer {
   /*Turn off parallax*/
   header{
     background-attachment: initial;
+  }
+  .intro-header {
+    animation: none; 
   }
 }
