@@ -328,16 +328,13 @@ p, li{
 
  .parallax {
   background-image: url('../img/pic6.jpg');
-  padding: 130px;
+  padding: 180px;
   max-width: 100%;
   margin: 10px;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}
-.paral{
-  color:white;
 }
 
 
