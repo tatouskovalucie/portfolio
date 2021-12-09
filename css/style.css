@@ -328,7 +328,7 @@ p, li{
 
  .parallax {
   background-image: url('../img/pic6.jpg');
-  padding: 180px;
+  padding: 150px;
   max-width: 100%;
   margin: 10px;
   background-attachment: fixed;
@@ -443,6 +443,9 @@ footer {
 
 @media(max-width: 560px)
 {
+  .career_grid{
+    grid-template-columns: 100%;
+  }
     .v-strech {
         grid-row: span 1;
     }
